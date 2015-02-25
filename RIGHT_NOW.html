@@ -1,0 +1,141 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>RIGHT NOW</title>
+	<meta name="description" content="">
+	<meta name="keywprds" content="">
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="css/hamburger.css">
+	<link rel="stylesheet" href="css/pagination.css">
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script>
+		$(document).ready(function() {
+  		$(document).delegate('.open', 'click', function(event){
+    	$(this).addClass('oppenned');
+    	event.stopPropagation();
+ 		 })
+  		$(document).delegate('body', 'click', function(event) {
+    	$('.open').removeClass('oppenned');
+  		})
+  		$(document).delegate('.cls', 'click', function(event){
+    	$('.open').removeClass('oppenned');
+    	event.stopPropagation();
+  		});
+		});
+	</script>
+	<script src="js/pagination.js"></script>
+</head>
+<body>
+<div id="wrapper">
+
+												<!-- HEADER STARTS HERE -->
+
+	<div id="header">
+		<div id="admin_logo">
+			<span>admin</span>
+			<span>panel</span>
+		</div>
+		<div id="login_server">
+			<span>Login Server</span>
+			<span>IP.134.124.64.1</span>
+		</div>
+		<div id="game_server">
+			<span>Game Server</span>
+			<span>IP.134.124.64.1</span>
+		</div>
+
+											<!-- jQuery Hamburger Menu Starts -->
+
+		<div id="hamburger_menu">
+			<div class="open">
+  				<span class="cls"></span>
+  				<span>
+    				<ul class="sub-menu ">
+				      <li><a href="NEWS.html">News</a></li>
+				      <li><a href="EVENTS.html">Events</a></li>
+				      <li><a href="RIGHT_NOW">Right Now</a></li>
+    				</ul>
+  				</span>
+  				<span class="cls"></span>
+			</div>
+		</div>
+
+											<!-- jQuery Hamburger Menu Ends -->
+		<div id="log_out_button">
+			<span>Log Out</span>
+		</div>
+		<div id="hi_user">
+			<span>Hi</span>
+			<span id="username">Admin</span>
+		</div>
+	</div>
+
+											<!-- MAIN:EVENT PAGE STARTS HERE -->
+		
+	<div id="page_name">
+		<span>Right Now</span>
+	</div>
+	<div id="main">
+		<div id="content" class="content">      <!-- Main PAGINATION container where all #content_container must be placed, one 										per page -->
+			<div id="content_container">		<!-- PAGINATION container which tells the script when "one page" is over, here 										can take up to four content div's before triggering the "next page" -->
+				<div id="right_now_item">
+					<div class="pic"></div>
+					<a href="#"><h2>Quisque rhoncus egestas interdum.</h2></a>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					<div class="info">
+						<div>
+							<span>Purity</span>
+						</div>
+						<div>
+							<span>DeatEnemies, Strongers, ReggersTeam, RedRosess</span>
+						</div>
+						<div>
+							<span>1080h</span>
+						</div>
+					</div>
+				</div>
+				<div id="right_now_item">
+					<div class="pic"></div>
+					<a href="#"><h2>Quisque rhoncus egestas interdum.</h2></a>
+					<p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+					<div class="info">
+						<div>
+							<span>Purity</span>
+						</div>
+						<div>
+							<span>DeatEnemies, Strongers, ReggersTeam, RedRosess</span>
+						</div>
+						<div>
+							<span>1080h</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="content_container">
+				<div id="right_now_item"></div>
+				<div id="right_now_item"></div>
+			</div>
+			<div id="content_container">
+				<div id="right_now_item"></div>
+				<div id="right_now_item"></div>
+			</div>
+			<div id="content_container">
+				<div id="right_now_item"></div>
+				<div id="right_now_item"></div>
+			</div>
+		</div>
+	</div>
+											<!-- FOOTER WITH PAGINATION SCRIPT STARTS HERE -->
+
+	<div class="pagination">
+        <ul>
+            <li><a href="#" id="prev" class="prevnext">Prev</a></li>
+            <li><a href="#" id="next" class="prevnext">Next</a></li>
+        </ul>
+        <br />
+    </div>
+    <div id="page_number" class="page_number">1</div>
+    <div id="clear"></div>
+</div>
+</body>
+</html>

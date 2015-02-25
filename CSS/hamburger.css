@@ -1,0 +1,143 @@
+.open {
+  width: 35px;
+  height: 25px;
+  display: block;
+  transition: opacity 0.2s linear;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+  cursor: pointer;
+}
+ 
+.open span {
+  display: block;
+  float: right;
+  clear: both;
+  height: 3px;
+  width: 34px;
+  border-radius: 40px;
+  background-color: #eaa402;
+  position: absolute;
+  right: 15%;
+  top: 19px;
+  overflow: hidden;
+  transition: all 0.1s ease;
+}
+ 
+.open span:nth-child(1) {
+  margin-top: 15px;
+  z-index: 9;
+}
+ 
+.open span:nth-child(2) { 
+  margin-top: 24px;
+  transition: rotate 0.1s ease;
+ }
+ 
+.open span:nth-child(3) { margin-top: 33px; }
+ 
+.sub-menu {
+  transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  height: 0;
+  width: 0;
+  right: 0;
+  top: 0;
+  /*position: absolute;*/
+  border-radius: 16%;
+  z-index: 18;
+  overflow: hidden;
+  cursor: initial
+}
+ 
+.sub-menu li {
+  display: block;
+  float: left;
+  width: 205px;
+  height: 105px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  text-transform: uppercase;
+  margin: 10% 0 0 6%;
+}
+ 
+/*.sub-menu li:first-child { margin-top: 15%; }*/
+ 
+.sub-menu li:nth-child(1) { -webkit-transition-delay: 0.05s; }
+ 
+.sub-menu li:nth-child(2) { -webkit-transition-delay: 0.10s; }
+ 
+.sub-menu li:nth-child(3) { -webkit-transition-delay: 0.15s; }
+ 
+.sub-menu li a {
+  width: 205px;
+  height: 105px;
+  color: #767683;
+  font-size: 1.4em;
+  display: block;
+  line-height: 145px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.sub-menu li a:hover {
+  color: #eaa402;
+  font-weight: bold;
+}
+
+.sub-menu li:nth-child(1) a {
+  background: url(../pics/NEWS_hamburger_icon.png) no-repeat center top;
+}
+
+.sub-menu li:nth-child(1) a:hover {
+  background: url(../pics/NEWS_hamburger_icon_H.png) no-repeat center top;
+}
+
+.sub-menu li:nth-child(2) a {
+  background: url(../pics/EVENTS_hamburger_icon.png) no-repeat center top;
+}
+
+.sub-menu li:nth-child(2) a:hover {
+  background: url(../pics/EVENTS_hamburger_icon_H.png) no-repeat center top;
+}
+
+.sub-menu li:nth-child(3) a {
+  background: url(../pics/RIGHT_NOW_hamburger_icon.png) no-repeat center top;
+}
+
+.sub-menu li:nth-child(3) a:hover {
+  background: url(../pics/RIGHT_NOW_hamburger_icon_H.png) no-repeat center top;
+}
+ 
+.oppenned .sub-menu {
+  opacity: 1;
+  height: 40%;
+  width: 900px;
+  margin: 6.7% auto 0 auto;
+  border: 1px solid #ffffff;
+}
+ 
+.oppenned span:nth-child(2) { overflow: visible; }
+ 
+.oppenned span:nth-child(1),
+.oppenned span:nth-child(3) {
+  z-index: 100;
+  transform: rotate(45deg);
+}
+ 
+.oppenned span:nth-child(1) { transform: rotate(45deg) translateY(8px) translateX(8px); }
+ 
+.oppenned span:nth-child(2) {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  background-color: #151517;
+  opacity: 0.9;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: initial;
+}
+ 
+.oppenned span:nth-child(3) { transform: rotate(-45deg) translateY(-5px) translateX(5px); }

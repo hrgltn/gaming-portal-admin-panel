@@ -1,0 +1,573 @@
+* {margin: 0 auto}
+
+html {
+	background: #151517
+}
+
+body {
+	font-family: OpenSans, sans-serif;
+}
+
+body a {
+	text-decoration: none
+}
+
+#wrapper {
+	width: 100%;
+	max-height: 1024px;
+}
+
+										/* HEADER STARTS HERE */
+
+#header {
+	width: 100%;
+	height: 90px;
+	border-bottom: 1px solid #2c2c39
+}
+
+#admin_logo {
+	float: left;
+	margin: 0 0 0 15%;
+	padding: 25px 0 0 0;
+}
+
+#admin_logo span {
+	font-size: 2em;
+	color:#ffffff;
+	text-transform: uppercase;
+}
+
+#admin_logo span:first-child {
+	font-weight: bold;
+}
+
+#login_server {
+	float: left;
+	width: 100%;
+	max-width: 120px;
+	height: 30px;
+	background: url(pics/little-server-logo.png) no-repeat center left;
+	margin: 28px 0 0 72px;
+}
+
+#login_server span {
+	padding: 0 0 0 29px;
+	font-size: 0.7em;
+	color:#eaa402;
+}
+
+#login_server span:nth-child(2) {
+	color:#434367
+}
+
+#game_server {
+	float: left;
+	width: 100%;
+	max-width: 120px;
+	height: 30px;
+	background: url(pics/little-server-logo.png) no-repeat center left;
+	margin: 28px 0 0 72px;
+}
+
+#game_server span {
+	padding: 0 0 0 29px;
+	font-size: 0.7em;
+	color:#eaa402;
+}
+
+#game_server span:nth-child(2) {
+	color:#434367
+}
+											/* jQuery Hamburger Menu Starts */
+
+#hamburger_menu {
+	float: right;
+	width: 35px;
+	height: 25px;
+	margin: 30px 15% 0 0;
+}
+
+											/* jQuery Hamburger Menu Ends */
+
+#log_out_button {
+	float: right;
+	text-align: center;
+	width: 96px;
+	height: 36px;
+	border: 1px solid #ffffff;
+	border-radius: 4px;
+	margin: 24px 34px 0 0;
+}
+
+#log_out_button:hover {
+	cursor: pointer;
+	background: #ffb300;
+}
+
+#log_out_button span {
+	color: #ffffff;
+	line-height: 36px
+}
+
+#hi_user {
+	float: right;
+	width: 100%;
+	max-width: 100px;
+	text-align: center;
+	font-size: 1.5em;
+	margin: 30px 40px 0 0
+}
+
+#hi_user span:first-child {
+	color: #ffffff
+}
+
+#hi_user span:last-child {
+	color: #eaa402
+}
+
+
+											/* HEADER ENDS HERE */
+
+											/* MAIN STARTS HERE */
+											
+#page_name {
+	width: 100%;
+	height:75px;
+	text-align: center;
+}
+
+#page_name span {
+	color: #2d2d43;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 75px;
+	font-size: 2em
+}
+
+#main, #content {
+    width: 100%;
+    max-width: 940px;
+    height:665px;
+    max-height: 665px;
+    text-align: center;
+    margin: 32px auto 0 au
+}
+
+#content #content_container #event_item {
+	float: left;
+	width: 460px;
+	height: 300px;
+	margin: 0 0 0 0;
+	border: 1px solid #434367;
+	border-radius: 2px
+}
+
+#content #content_container #event_item:nth-of-type(3) {
+	margin: 15px 0 0 0
+}
+
+#content #content_container #event_item:nth-of-type(2) {
+	margin: 0 0 0 15px
+}
+
+#content #content_container #event_item:nth-of-type(4){
+	margin: 15px 0 0 15px
+}
+
+											/* MAIN:EVENTS PAGE STARTS HERE */
+
+#event_item {
+	width: 460px;
+	height: 300px;
+}
+
+#event_item .pic {
+	width: 60px;
+	height: 36px;
+	float:left;
+	background: url(pics/Event_Item_h2_bckg.png) no-repeat center right;
+	margin: 25px 0 0 0;
+}
+
+#event_item h2 {
+	text-transform: uppercase;
+	color: #ffffff;
+	display: block;
+	width: 100%;
+	max-width: 360px;
+	height: 36px;
+	float: left;
+	text-align: left;
+	margin: 25px 0 0 20px;
+	padding: 0 0 0 15px;
+	font-size: 1.1em;
+	border-left: 1px solid #ffb300
+}
+											
+#event_item a {
+	text-decoration: none
+}
+
+#event_item h2:hover {
+	color: #ffb300;
+}
+
+#event_item p {
+	float: left;
+	color: #767684;
+	text-align: left;
+	margin: 25px 0 0 80px;
+	font-size: 0.9em;
+	font-weight: bold
+}
+
+#event_item .calendar, #event_item .edit {
+	width: 100%;
+	max-width: 360px;
+	height: 50px;
+	float: left;
+	margin: 15px 0 0 80px
+}
+
+#event_item .calendar{
+	border-bottom: 1px solid #767684
+}
+
+
+#event_item .calendar .date {
+	width: 160px;
+	height: 25px;
+	float: left;
+	background: url(pics/calendar_icon.png) no-repeat center left, url(pics/tick.png) no-repeat center right;
+	margin: 3% 0 0 0;
+	line-height: 25px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1em;
+}
+
+#event_item .calendar .time {
+	width: 100px;
+	height: 25px;
+	float: right;
+	margin: 3% 20px 0 0;
+	background: url(pics/clock.png) no-repeat center left;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 1em;
+	line-height: 25px;
+}
+
+#event_item .edit {
+	margin: 12px 0 0 80px;
+}
+
+#event_item .edit .author, #event_item .edit .editable {
+	height: 20px;
+	color: #767683;
+	line-height: 20px;
+} 
+
+#event_item .edit .author span {
+	float: left;
+	font-size: 0.7em;
+	font-weight: bold;
+
+}
+
+#event_item .edit .author span:nth-child(2) {
+	text-transform: uppercase;
+}
+
+#event_item .edit .author span:last-child {
+	float: right
+}
+
+#content #event_item .edit .editable div:first-child {
+	width: 37px;
+	height: 15px;
+	color:#767683;
+	text-align: right;
+	font-size: 0.8em;
+	font-weight: bold;
+	line-height: 15px;
+	float: left;
+	background: url(pics/speakup.png) no-repeat center left;
+	margin: 2% 0 0 0
+}
+
+#content #event_item .edit .editable div:nth-of-type(2) {
+	width: 45px;
+	height: 15px;
+	color: #767683;
+	text-align: right;
+	font-size: 0.8em;
+	font-weight: bold;
+	line-height: 15px;
+	float: left;
+	background: url(pics/eye.png) no-repeat center left;
+	margin: 2% 0 0 25px
+}
+
+#content #event_item .edit .editable div:nth-of-type(3) {
+	width: 11px;
+	height: 11px;
+	float: right;
+	background: url(pics/cross.png) no-repeat center center;
+	margin: 2% 0 0 0
+}
+
+#content #event_item .edit .editable div:nth-of-type(3):hover {
+	background: url(pics/cross_hover.png) no-repeat center center;
+	cursor: pointer;
+}
+
+#content #event_item .edit .editable div:last-child {
+	width: 12px;
+	height: 14px;
+	float: right;
+	background: url(pics/pen.png) no-repeat center center;
+	margin: 2% 20px 0 0
+}
+
+#content #event_item .edit .editable div:last-child:hover {
+	background: url(pics/pen_hover.png) no-repeat center center;
+	cursor: pointer;
+}
+
+										/* MAIN:EVENTS PAGE ENDS HERE */
+
+										/* MAIN:NEWS PAGE STARTS HERE */
+
+#news_item {
+	width: 298px;
+	height: 380px;
+	float: left;
+	background: url(pics/news_item_bckg.png) no-repeat center top;
+	border: 1px solid #2c2c39;
+	border-radius: 2px;
+	text-align: left
+}
+
+#news_item:nth-of-type(2), #news_item:nth-of-type(5) {
+	background: url(pics/News_Item_BCKG_2.png) no-repeat center top;
+	margin: 0 0 0 15px
+}
+
+#news_item:nth-of-type(3), #news_item:nth-of-type(6) {
+	background: url(pics/News_Item_BCKG_3.png) no-repeat center top;
+	margin: 0 0 0 15px
+}
+
+#news_item:nth-of-type(4) {
+	margin: 15px 0 0 0px
+}
+
+#news_item:nth-of-type(5), #news_item:nth-of-type(6) {
+	margin: 15px 0 0 15px
+}
+
+#news_item .news_info {
+	width: 26px;
+	height: 26px;
+	background: url(pics/news_item_info_icon.png) no-repeat;
+	margin: 5% 0 0 5%;
+}
+
+#news_item h2 {
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 1em;
+	margin: 55% 0 0 5%
+} 
+
+#news_item h2:hover {
+	color: ffb300
+}
+
+#news_item p {
+	color: #62626d;
+	font-size: 0.8em;
+	margin: 10px 5% 0 5%;
+	padding: 0 0 3% 0;
+	border-bottom: 1px solid #2c2c39
+}
+
+#news_item .edit {
+	margin: 12px 5% 0 5%;
+}
+
+#news_item .edit .author, #news_item .edit .editable {
+	height: 20px;
+	color: #767683;
+	line-height: 20px;
+} 
+
+#news_item .edit .author span {
+	float: left;
+	font-size: 0.7em;
+	font-weight: bold;
+
+}
+
+#news_item .edit .author span:nth-child(2) {
+	text-transform: uppercase;
+}
+
+#news_item .edit .author span:last-child {
+	float: right
+}
+
+#content #news_item .edit .editable div:first-child {
+	width: 37px;
+	height: 15px;
+	color:#767683;
+	text-align: right;
+	font-size: 0.8em;
+	font-weight: bold;
+	line-height: 15px;
+	float: left;
+	background: url(pics/speakup.png) no-repeat center left;
+	margin: 2% 0 0 0
+}
+
+#content #news_item .edit .editable div:nth-of-type(2) {
+	width: 45px;
+	height: 15px;
+	color: #767683;
+	text-align: right;
+	font-size: 0.8em;
+	font-weight: bold;
+	line-height: 15px;
+	float: left;
+	background: url(pics/eye.png) no-repeat center left;
+	margin: 2% 0 0 25px
+}
+
+#content #news_item .edit .editable div:nth-of-type(3) {
+	width: 11px;
+	height: 11px;
+	float: right;
+	background: url(pics/cross.png) no-repeat center center;
+	margin: 2% 0 0 0
+}
+
+#content #news_item .edit .editable div:nth-of-type(3):hover {
+	background: url(pics/cross_hover.png) no-repeat center center;
+	cursor: pointer;
+}
+
+#content #news_item .edit .editable div:last-child {
+	width: 12px;
+	height: 14px;
+	float: right;
+	background: url(pics/pen.png) no-repeat center center;
+	margin: 2% 20px 0 0
+}
+
+#content #news_item .edit .editable div:last-child:hover {
+	background: url(pics/pen_hover.png) no-repeat center center;
+	cursor: pointer;
+}
+
+
+
+										/* MAIN:NEWS PAGE ENDS HERE */
+
+										/* MAIN:RIGHT NOW PAGE STARTS HERE */
+
+#right_now_item {
+	width: 940px;
+	height: 250px;
+	float: left;
+	border: 1px solid #2c2c39;
+	border-radius: 2px;
+}
+
+#right_now_item:nth-child(2) {
+	margin: 20px auto 0 auto
+}
+
+#right_now_item:hover {
+	border: 1px solid #ffb300;
+	border-radius: 2px
+}
+
+#right_now_item .pic {
+	width: 60px;
+	height: 36px;
+	float:left;
+	background: url(pics/right_now_item_star.png) no-repeat center right;
+	margin: 16px 0 0 0;
+}
+
+#right_now_item h2 {
+	text-transform: uppercase;
+	color: #ffffff;
+	display: block;
+	width: 100%;
+	max-width: 800px;
+	height: 36px;
+	float: left;
+	text-align: left;
+	margin: 25px 0 0 20px;
+	padding: 0 0 0 15px;
+	font-size: 1.1em;
+	border-left: 1px solid #ffb300
+}
+											
+#right_now_item a {
+	text-decoration: none
+}
+
+#right_now_item h2:hover {
+	color: #ffb300;
+}
+
+#right_now_item p {
+	float: left;
+	color: #767684;
+	text-align: left;
+	margin: 0 0 0 8.6%;
+	padding: 0 0 0 15px;
+	font-size: 0.9em;
+	font-weight: bold;
+	border-left: 1px solid #ffb300;
+}
+
+#right_now_item .info {
+	width: 780px;
+	height: 105px;
+	margin: 115px auto 0 auto;
+	border-top: 1px solid #2c2c39
+}
+
+#right_now_item .info div {
+	margin: 15px 0 0 0;
+	text-align: right;
+	color: #767684;
+	font-weight: bold;
+	font-size: 0.9em;
+}
+
+#right_now_item .info div:first-child {
+	width: 80px;
+	height: 20px;
+	background: url(pics/green-shield.png) no-repeat center left;
+}
+
+#right_now_item .info div:nth-child(2) {
+	width: 400px;
+	height: 20px;
+	background: url(pics/red_swords.png) no-repeat center left;
+}
+
+#right_now_item .info div:last-child {
+	width: 80px;
+	height: 25px;
+	background: url(pics/clock.png) no-repeat center left;
+	color: #FFF;
+	line-height: 25px;
+	font-size: 1em;
+}
